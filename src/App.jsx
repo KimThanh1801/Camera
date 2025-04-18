@@ -1,16 +1,20 @@
-import Content from './components/Content/content'
-import Footer from './components/Footer/footer'
-import Header from './components/Header/header'
+import React, { Component } from 'react';
+import Header from "./components/Header/header";
+import Content from "./components/Content/content";
+import Footer from "./components/Footer/footer";
+import RightContent from './components/Content/RightContent';
 
-function App() {
-
-  return (
-    <>
-      <Header></Header>
-      <Content></Content>
-      <Footer></Footer>
-    </>
-  )
+class App extends React.Component {
+    render() {
+        return (
+            <div id="container">
+                <Header />
+                <Content></Content>
+                <RightContent></RightContent>
+                <Footer />
+            </div>
+        );
+    }
 }
 
-export default App
+export default App;
