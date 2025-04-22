@@ -1,10 +1,10 @@
 import React from 'react';
-import { getData } from '../../assets/data';
+import useGetData from '../../assets/data1';
 import ShowCard from '../ShowCard/Showcard';
 
-
 function RightContent() {
-  const products = getData();
+  // Lấy dữ liệu từ hook useGetData
+  const products = useGetData();
 
   return (
     <div id="right-content">

@@ -10,7 +10,6 @@ class App extends React.Component {
             <div id="container">
                 <Header />
                 <Content></Content>
-                <RightContent></RightContent>
                 <Footer />
             </div>
         );

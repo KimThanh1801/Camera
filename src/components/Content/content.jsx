@@ -1,9 +1,12 @@
 import React from "react";
+import useGetData from "../../assets/data1";
 
 function Content() {
+    const products = useGetData();
+
     return (
         <div id="content">
-            {/* this is the content for menu */}
+         
             <div id="left-content">
                 <h1>Category</h1>
                 <ul className="drop">
@@ -60,22 +63,29 @@ function Content() {
             <div id="right-content">
                 <h2>Product :</h2>
                 <div id="products">
-                    {[1, 2, 3, 4, 5].map((num, index) => (
-                        <div className="product" key={index}>
-                            <div className="text">
-                                <div className="p-name"><a href="item.html">LUMIX DMC-G{index % 2 === 0 ? 2 : 3}</a></div>
+                    
+                    {products.length === 0 ? (
+                        <p>Loading...</p>  
+                    ) : (
+                        products.map((product, index) => (
+                            <div className="product" key={index}>
+                                <div className="text">
+                                    <div className="p-name">
+                                        <a href="item.html">{product.name}</a>
+                                    </div>
+                                </div>
+                                <div className="p-img">
+                                    <img src={product.image} width="200" height="200" alt="Product" />
+                                </div>
+                                <div className="text">
+                                    <div className="p-cat">{product.category}</div>
+                                    <div className="p-price">{product.price || "Please Call"}</div>
+                                    <input type="button" className="button" name="add" value="Add to cart" />
+                                </div>
+                                <div className="clear"></div>
                             </div>
-                            <div className="p-img">
-                                <img src={`images/mayanh${(index % 3) + 1}.jpg`} width="200" height="200" alt="Product" />
-                            </div>
-                            <div className="text">
-                                <div className="p-cat">DIGITAL CAMERA</div>
-                                <div className="p-price">Please Call</div>
-                                <input type="button" className="button" name="add" value="Add to cart" />
-                            </div>
-                            <div className="clear"></div>
-                        </div>
-                    ))}
+                        ))
+                    )}
                     <div style={{ clear: "both" }}></div>
                 </div>
                 <div style={{ clear: "both" }}></div>
