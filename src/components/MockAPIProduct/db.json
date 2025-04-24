@@ -1,0 +1,41 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "iphone 15",
+        "price": 10000000,
+        "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:0/q:90/plain/https://cellphones.com.vn/media/wysiwyg/Phone/Apple/iphone_15/dien-thoai-iphone-15-20.jpg"
+      },
+      {
+        "id": 2,
+        "name": "iphone 16",
+        "price": 15000000,
+        "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:0/q:90/plain/https://cellphones.com.vn/media/wysiwyg/Phone/Apple/iPhone-16/cate-iphone-16-series-28.jpg"
+      },
+      {
+        "id": 3,
+        "name": "iphone 14",
+        "price": 9000000,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpcKei6ArbUu3duroFGzTmJMB2tex0uvKUkw&s"
+      },
+      {
+        "id": 4,
+        "name": "iphone 13",
+        "price": 8500000,
+        "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/1/5/15_2_7_2_5.jpg"
+      },
+      {
+        "id": 5,
+        "name": "iphone 12",
+        "price": 8100000,
+        "image": "https://cdn2.cellphones.com.vn/x/media/catalog/product/d/o/download_2__1_27.png"
+      },
+      {
+        "id": 6,
+        "name": "Doreamon",
+        "price": 8100000,
+        "image": "https://i.pinimg.com/736x/3f/3c/9a/3f3c9a765bdeb8b74d1fe6c5084f6b34.jpg"
+      }
+    ]
+  }
+  

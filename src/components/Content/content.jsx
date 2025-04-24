@@ -76,6 +76,7 @@ function Content() {
                                 </div>
                                 <div className="p-img">
                                     <img src={product.image} width="200" height="200" alt="Product" />
+                                    
                                 </div>
                                 <div className="text">
                                     <div className="p-cat">{product.category}</div>
